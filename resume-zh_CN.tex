@@ -13,48 +13,71 @@
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{你的大名}
+\name{王贇阳}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+  \email{sunnycloudyang@outlook.com} \textperiodcentered\ 
+  \phone{(+86) 18811527221} \textperiodcentered\ 
+  \github[SunnyCloudYang]{https://github.com/SunnyCloudYang}}
  
 \section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{上海交通大学}, 上海}{2013 -- 至今}
-\textit{在读硕士研究生}\ 信息与通信工程, 预计 2016 年 3 月毕业
-\datedsubsection{\textbf{西安电子科技大学}, 西安, 陕西}{2009 -- 2013}
-\textit{学士}\ 通信工程
+\datedsubsection{\textbf{清华大学}, 北京}{2021 -- 至今}
+\textit{在读本科生}\ 自动化系，预计 2025 年 6 月毕业
 
-\section{\faUsers\ 实习/项目经历}
-\datedsubsection{\textbf{黑科技公司} 上海}{2015年3月 -- 2015年5月}
-\role{实习}{经理: 高富帅}
-xxx后端开发
-\begin{itemize}
-  \item 实现了 xxx 特性
-  \item 后台资源占用率减少8\%
-  \item xxx
-\end{itemize}
+\section{\faUsers\ 项目经历}
 
-\datedsubsection{\textbf{分布式科学上网姿势}}{2014年6月 -- 至今}
-\role{Golang, Linux}{个人项目，和富帅糕合作开发}
+\datedsubsection{\textbf{基于STM32的智能宿舍系统}}{2024年1月 -- 2024年2月}
+\role{C/C++, React Native}{课程项目}
 \begin{onehalfspacing}
-分布式负载均衡科学上网姿势, https://github.com/cyfdecyf/cow
+使用STM32开发板实现智能宿舍系统
 \begin{itemize}
-  \item 修复了连接未正常关闭导致文件描述符耗尽的 bug
-  \item 使用Chord 哈希 URL, 实现稳定可靠地分流
-  \item xxx (尽量使用量化的客观结果)
+  \item 实现了温湿度传感器、人体红外传感器、OLED显示屏等外设的驱动
+  \item 完成了基于React Native的手机APP初步开发
+  \item 实现了基于蓝牙的手机APP控制
 \end{itemize}
 \end{onehalfspacing}
 
-\datedsubsection{\textbf{\LaTeX\ 简历模板}}{2015 年5月 -- 至今}
-\role{\LaTeX, Python}{个人项目}
+\datedsubsection{\textbf{基于React和Hugo的外贸网站}}{2023年10月 -- 2024年1月}
+\role{Javascript, React, Hugo}{个人项目}
 \begin{onehalfspacing}
-优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
+使用React和Hugo实现外贸公司官网
 \begin{itemize}
-  \item 容易定制和扩展
-  \item 完善的 Unicode 字体支持，使用 \XeLaTeX\ 编译
-  \item 支持 FontAwesome 4.5.0
+  \item 使用React实现了前端页面内容
+  \item 使用Hugo实现了静态网站框架
+  \item Repo: \LinkTargetOn{https://github.com/trademall/trademall.github.io}
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{指纹匹配与特征提取}}{2023年12月}
+\role{MATLAB}{课程项目}
+\begin{onehalfspacing}
+使用MATLAB对指纹进行细节点提取与匹配
+\begin{itemize}
+  \item 实现指纹图像输入到特征提取与匹配全流程
+  \item 实现PalmCode的提取与匹配
+  \item 准确率达到95\%，处理时间在900ms以内
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{基于卷积神经网络的头部特征分类}}{2023年10月}
+\role{Python, PyTorch}{课程项目}
+\begin{onehalfspacing}
+使用PyTorch实现卷积神经网络对CelebA数据集进行多特征分类
+\begin{itemize}
+  \item 实现了CNN、VGG16等网络结构
+  \item 在CelebA数据集上准确率超过90\%
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{基于深度强化学习的机器人导航}}{2022年5月 -- 2022年9月}
+\role{Python, PyTorch, OpenCV, ROS2}{比赛项目}
+\begin{onehalfspacing}
+使用深度强化学习算法解决机器人导航问题
+\begin{itemize}
+  \item 实现了DQN等算法，使用gRPC协议通讯
+  \item 在真实环境中进行训练与测试
+  \item 实现了机器人在未知环境中的导航与目标跟随
+  \item 获得小米CyberDog机器狗开发大赛特等奖
 \end{itemize}
 \end{onehalfspacing}
 
@@ -65,24 +88,27 @@ xxx后端开发
 %  \item main contribution
 %\end{itemize}
 
-\section{\faCogs\ IT 技能}
+\section{\faCogs\ 技能}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C == Python > C++ > Java
-  \item 平台: Linux
-  \item 开发: xxx
+  \item 编程语言: C/C++, Python, Javascript, MATLAB
+  \item 平台: Windows, Linux, Android, STM32
+  \item 框架：NodeJS, React, React Native, Bootstrap, PyTorch, Hugo
 \end{itemize}
 
 \section{\faHeartO\ 获奖情况}
-\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
-\datedline{其他奖项}{2015}
+\datedline{\textit{二等奖}，清华大学第六届人工智能挑战赛}{2023年5月}
+\datedline{\textit{特等奖}， 清华大学首届机器狗开发大赛}{2022年9月}
+\datedline{\textit{一等奖}，清华大学第七届新生C语言大赛}{2022年3月}
+\datedline{\textit{新生奖、优胜奖}， 清华大学第二十三届电子设计大赛}{2021年12月}
 
 \section{\faInfo\ 其他}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 技术博客: http://blog.yours.me
-  \item GitHub: https://github.com/username
-  \item 语言: 英语 - 熟练(TOEFL xxx)
+  \item 个人博客: https://sunnycloudyang.github.io/
+  \item GitHub: https://github.com/SunnyCloudYang/
+  \item 语言: 英语 - 熟练（CET-6 615）
+  \item 个人爱好：书法（九级），吉他
 \end{itemize}
 
 %% Reference
