@@ -9,6 +9,9 @@
 % \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 \usepackage{linespacing_fix} % disable extra space before next section
 \usepackage{cite}
+% reduce the space between subsections
+\usepackage{titlesec}
+\titlespacing*{\subsection}{0pt}{0.36\baselineskip}{0.2\baselineskip}
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
@@ -21,65 +24,42 @@
   \github[SunnyCloudYang]{https://github.com/SunnyCloudYang}}
  
 \section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{清华大学}, 北京}{2021 -- 至今}
-\textit{在读本科生}\ 自动化系，预计 2025 年 6 月毕业
+\datedsubsection{\textbf{清华大学}, 北京}{2021年9月 -- 至今}
+\textit{在读本科生}\ 自动化系，预计 2025 年 6 月毕业\\
+相关课程：数字图像处理、人工智能原理、模式识别与机器学习、数据结构与算法、计算机网络
 
 \section{\faUsers\ 项目经历}
-
-\datedsubsection{\textbf{基于STM32的智能宿舍系统}}{2024年1月 -- 2024年2月}
-\role{C/C++, React Native}{课程项目}
-\begin{onehalfspacing}
-使用STM32开发板实现智能宿舍系统
+\datedsubsection{\textbf{基于深度学习的部分指纹匹配}}{2024年1月 -- 2024年3月}
+\role{Python, PyTorch}{实验室项目}
+复现PFVNet，使用 spatial transformer network 和自注意力机制实现部分指纹与大指纹匹配
 \begin{itemize}
-  \item 实现了温湿度传感器、人体红外传感器、OLED显示屏等外设的驱动
-  \item 完成了基于React Native的手机APP初步开发
-  \item 实现了基于蓝牙的手机APP控制
+  \item 使用PyTorch实现了PFVNet网络结构
+  \item 在FVC2006数据集上准确率超过95\%，配对时间小于60ms
 \end{itemize}
-\end{onehalfspacing}
 
 \datedsubsection{\textbf{基于React和Hugo的外贸网站}}{2023年10月 -- 2024年1月}
 \role{Javascript, React, Hugo}{个人项目}
-\begin{onehalfspacing}
 使用React和Hugo实现外贸公司官网
 \begin{itemize}
-  \item 使用React实现了前端页面内容
-  \item 使用Hugo实现了静态网站框架
+  \item 使用Hugo搭建静态网站框架后通过React实现了用户界面与后台管理界面。
   \item Repo: \LinkTargetOn{https://github.com/trademall/trademall.github.io}
 \end{itemize}
-\end{onehalfspacing}
-
-\datedsubsection{\textbf{指纹匹配与特征提取}}{2023年12月}
-\role{MATLAB}{课程项目}
-\begin{onehalfspacing}
-使用MATLAB对指纹进行细节点提取与匹配
-\begin{itemize}
-  \item 实现指纹图像输入到特征提取与匹配全流程
-  \item 实现PalmCode的提取与匹配
-  \item 准确率达到95\%，处理时间在900ms以内
-\end{itemize}
-\end{onehalfspacing}
 
 \datedsubsection{\textbf{基于卷积神经网络的头部特征分类}}{2023年10月}
 \role{Python, PyTorch}{课程项目}
-\begin{onehalfspacing}
 使用PyTorch实现卷积神经网络对CelebA数据集进行多特征分类
 \begin{itemize}
-  \item 实现了CNN、VGG16等网络结构
-  \item 在CelebA数据集上准确率超过90\%
+  \item 实现了CNN、VGG16等网络结构进行横向比较
+  \item 单特征准确率在CelebA数据集上超过90\%
 \end{itemize}
-\end{onehalfspacing}
 
 \datedsubsection{\textbf{基于深度强化学习的机器人导航}}{2022年5月 -- 2022年9月}
 \role{Python, PyTorch, OpenCV, ROS2}{比赛项目}
-\begin{onehalfspacing}
 使用深度强化学习算法解决机器人导航问题
 \begin{itemize}
-  \item 实现了DQN等算法，使用gRPC协议通讯
-  \item 在真实环境中进行训练与测试
+  \item 使用DQN算法训练，gRPC协议通讯
   \item 实现了机器人在未知环境中的导航与目标跟随
-  \item 获得小米CyberDog机器狗开发大赛特等奖
 \end{itemize}
-\end{onehalfspacing}
 
 % Reference Test
 %\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
@@ -90,7 +70,7 @@
 
 \section{\faCogs\ 技能}
 % increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.5ex]
+\begin{itemize}
   \item 编程语言: C/C++, Python, Javascript, MATLAB
   \item 平台: Windows, Linux, Android, STM32
   \item 框架：NodeJS, React, React Native, Bootstrap, PyTorch, Hugo
@@ -104,11 +84,10 @@
 
 \section{\faInfo\ 其他}
 % increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.5ex]
+\begin{itemize}
   \item 个人博客: https://sunnycloudyang.github.io/
   \item GitHub: https://github.com/SunnyCloudYang/
   \item 语言: 英语 - 熟练（CET-6 615）
-  \item 个人爱好：书法（九级），吉他
 \end{itemize}
 
 %% Reference
